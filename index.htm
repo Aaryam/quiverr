@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Home | Quiverr</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=devicewidth,initial-scale=1">
+</head>
+
+<body>
+    <p id="pagelink"></p>
+
+    <!--Navbar-->
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#store">Store</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!--Image Header-->
+
+    <a name="home"></a>
+    <div class="right" id="imagebg">
+        <h1 id="mainheader">Quiverr</h1>
+        <input type="button" value="Read More" class="button-down" onclick="moveTo('#about')">
+    </div>
+
+    <!--Content-->
+
+    <a name="about"></a>
+    <div id="content">
+        <div id="spacer">
+            <h1>About Us</h1>
+            <pre>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </pre>
+            <input type="button" value="Shop" class="button-down" onclick="moveTo('#store')">
+        </div>
+        <a name="store"></a>
+        <div id="spacer">
+            <h1>Store</h1>
+            <div class="row">
+                <div class="column">
+                    <a onclick="movePage('images/bgclothes.jpg');">
+                        <img src="images/bgclothes.jpg">
+                        <p class="imagetxtbox">T-Shirt</p>
+                </div>
+                <div class="column">
+                    <a onclick="movePage('images/bgclothes.jpg')">
+                        <img src="images/bgclothes.jpg">
+                        <p class="imagetxtbox">T-Shirt</p>
+                </div>
+                <div class="column">
+                    <a onclick="movePage('images/bgclothes.jpg')">
+                        <img src="images/bgclothes.jpg">
+                        <p class="imagetxtbox">T-Shirt</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <a onclick="movePage('images/bgclothes.jpg')">
+                        <img src="images/bgclothes.jpg">
+                        <p class="imagetxtbox">T-Shirt</p>
+                </div>
+                <div class="column">
+                    <a onclick="movePage('images/bgclothes.jpg')">
+                        <img src="images/bgclothes.jpg">
+                        <p class="imagetxtbox">T-Shirt</p>
+                </div>
+                <div class="column">
+                    <a onclick="movePage('images/bgclothes.jpg')">
+                        <img src="images/bgclothes.jpg">
+                        <p class="imagetxtbox">T-Shirt</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <a onclick="movePage('images/bgclothes.jpg')">
+                        <img src="images/bgclothes.jpg">
+                        <p class="imagetxtbox">T-Shirt</p>
+                </div>
+                <div class="column">
+                    <a onclick="movePage('images/bgclothes.jpg')">
+                        <img src="images/bgclothes.jpg">
+                        <p class="imagetxtbox">T-Shirt</p>
+                </div>
+                <div class="column">
+                    <a onclick="movePage('images/bgclothes.jpg')">
+                        <img src="images/bgclothes.jpg">
+                        <p class="imagetxtbox">T-Shirt</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <a onclick="movePage('images/bgclothes.jpg')">
+                        <img src="images/bgclothes.jpg">
+                        <p class="imagetxtbox">T-Shirt</p>
+                </div>
+                <div class="column">
+                    <a onclick="movePage('images/bgclothes.jpg')">
+                        <img src="images/bgclothes.jpg">
+                        <p class="imagetxtbox">T-Shirt</p>
+                </div>
+                <div class="column">
+                    <a onclick="movePage('images/bgclothes.jpg')">
+                        <img src="images/bgclothes.jpg">
+                        <p class="imagetxtbox">T-Shirt</p>
+                </div>
+            </div>
+            <a name="contact"></a>
+        </div>
+        <div id="spacer">
+            <div class="footer">
+                <a href="www.facebook.com" class="fa fa-facebook"></a>
+                <a href="www.twitter.com" class="fa fa-twitter"></a>
+                <a href="www.instagram.com" class="fa fa-instagram"></a>
+                <a href="www.gmail.com" class="fa fa-google"></a>
+            </div>
+        </div>
+    </div>
+</body>
