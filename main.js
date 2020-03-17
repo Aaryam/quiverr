@@ -7,11 +7,9 @@ function moveTo (siteLink)
     window.location.replace(siteLink);
 }
 
-function movePage (image)
+function movePage (site)
 {
-    imageSource = image;
-    console.log(image + 'this is the one in movePage');
-    window.location.href = 'clothes.html';
+    window.location.href = site;
 }
 
 function returnImageClothes ()
