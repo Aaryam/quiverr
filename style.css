@@ -198,6 +198,10 @@ background-repeat: no-repeat;
   width: 500px;
 }
 
+.imgbox {
+  border-style: solid;
+}
+
 /* fa icon css*/
 
 .fa {
