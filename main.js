@@ -19,7 +19,7 @@ function moveClothes(img) {
         // Retrieve
         
     } else {
-        document.getElementById("clothesImg").innerHTML = "Sorry, your browser does not support Web Storage...";
+        document.getElementById("clothesImg").alt = "Sorry, your browser does not support local storage";
     }
 }
 
