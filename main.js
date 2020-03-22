@@ -2,20 +2,25 @@ imageSource = '';
 
 console.log(imageSource);
 
-function moveTo (siteLink)
-{
+function moveTo(siteLink) {
     window.location.replace(siteLink);
 }
 
-function movePage (site)
-{
+function movePage(site) {
     window.location.href = site;
 }
 
-function returnImageClothes ()
-{
-    document.getElementById("myImg").src = imageSource;
-    console.log(imageSource);
+function moveClothes(img) {
+    window.location.href = '../clothes.html';
+    // Check browser support
+    if (typeof (Storage) !== "undefined") {
+        // Store
+        localStorage.setItem("clothesImage", img);
+        // Retrieve
+        document.getElementById("clothesImg").innerHTML = localStorage.getItem("clothesImage");
+    } else {
+        document.getElementById("clothesImg").innerHTML = "Sorry, your browser does not support Web Storage...";
+    }
 }
 
 /* Commands to commit */
