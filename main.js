@@ -12,15 +12,20 @@ function movePage(site) {
 
 function moveClothes(img) {
     window.location.href = '../clothes.html';
-    // Check browser support
     if (typeof (Storage) !== "undefined") {
         // Store
-        localStorage.setItem("clothesImage", img);
+        localStorage.setItem("lastname", img);
+        console.log(localStorage.getItem("lastname"));
         // Retrieve
-        document.getElementById("clothesImg").innerHTML = localStorage.getItem("clothesImage");
+        
     } else {
         document.getElementById("clothesImg").innerHTML = "Sorry, your browser does not support Web Storage...";
     }
+}
+
+function loadClothes ()
+{
+    document.getElementById("clothesImg").src = localStorage.getItem("lastname");
 }
 
 /* Commands to commit */
